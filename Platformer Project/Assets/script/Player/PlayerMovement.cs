@@ -46,12 +46,11 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("isJumping", false);
         }
-
     }
 
     private void OnCollisionExit2D(Collision2D coll)
     {
-        //When you collide with eather of the object, it show the proper animation
+        //When you don't collide with eather of the object, it show the proper animation
         if (coll.collider.tag == "ground")
         {
             isJumping = true;
