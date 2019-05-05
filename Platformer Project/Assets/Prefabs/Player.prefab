@@ -371,7 +371,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0068956614, y: -0.3337567}
+  m_Offset: {x: 0.0068956614, y: -0.71}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -397,7 +397,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.6}
+  m_Offset: {x: 0, y: -1.96}
   serializedVersion: 2
   m_Radius: 0.45
 --- !u!95 &717908550286715285
@@ -488,7 +488,6 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 717908550286715291}
   text: {fileID: 0}
-  maximumPlatforms: 30
   levelWidth: 7
   minY: 4
   maxY: 4

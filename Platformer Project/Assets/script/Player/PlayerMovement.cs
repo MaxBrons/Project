@@ -37,27 +37,19 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D coll)
     {
         //When you collide with eather of the objects, it shows the proper animation
-        if (coll.collider.tag == "ground")
+        if (coll.collider.tag == "ground" || coll.collider.tag == "launchpad")
         {
-            isJumping = false;
-            animator.SetBool("isJumping", false);
-        }
-        else if(coll.collider.tag == "launchpad")
-        {
-            animator.SetBool("isJumping", false);
+                isJumping = false;
+                animator.SetBool("isJumping", false);
         }
     }
 
     private void OnCollisionExit2D(Collision2D coll)
     {
         //When you don't collide with eather of the object, it show the proper animation
-        if (coll.collider.tag == "ground")
+        if (coll.collider.tag == "ground" || coll.collider.tag == "launchpad")
         {
             isJumping = true;
-            animator.SetBool("isJumping", true);
-        }
-        else if (coll.collider.tag == "launchpad")
-        {
             animator.SetBool("isJumping", true);
         }
     }
