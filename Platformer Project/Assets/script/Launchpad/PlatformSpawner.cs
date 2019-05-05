@@ -10,13 +10,19 @@ public class PlatformSpawner : MonoBehaviour
     public CameraCap camCap;
     public GameObject meteorite;
     public GameObject player;
+    public GameObject text;
     private float numberOfPlatforms = 0;
-    public float maximumPlatforms = 20;
+    private float maximumPlatforms;
     public float levelWidth = 6f;
     public float minY = .2f;
     public float maxY = 2f;
     public bool allowedToSpawn = true;
     public bool meteorSpawn = false;
+
+    void Start()
+    {
+        maximumPlatforms = Random.Range(10, 25);
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -43,8 +49,15 @@ public class PlatformSpawner : MonoBehaviour
 
         if (!allowedToSpawn && !meteorSpawn)
         {
-            Instantiate(meteorite, player.transform.position + new Vector3(0, 20, 0), Quaternion.identity);
+            text.SetActive(true);
+            Instantiate(meteorite, player.transform.position + new Vector3(0, 40, 0), Quaternion.identity);
             meteorSpawn = true;
+            Invoke("setTextInactive", 3f);
         }
+    }
+
+    public void setTextInactive()
+    {
+        text.SetActive(false);
     }
 }

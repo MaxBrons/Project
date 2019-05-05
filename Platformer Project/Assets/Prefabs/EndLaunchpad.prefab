@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2700175802118129655}
   - component: {fileID: 8271801867493533410}
   - component: {fileID: 4941360537626534456}
+  - component: {fileID: 4072526755891221164}
   m_Layer: 0
   m_Name: EndLaunchpad
   m_TagString: endLaunchpad
@@ -132,3 +133,15 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
+--- !u!114 &4072526755891221164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2700175802118129652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 806c309ff64f21f4db9e0cf04f003699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

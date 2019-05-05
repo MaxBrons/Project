@@ -233,6 +233,7 @@ GameObject:
   - component: {fileID: 717908550286715245}
   - component: {fileID: 717908550286715283}
   - component: {fileID: 4535476459613242693}
+  - component: {fileID: 30227480728014264}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -486,7 +487,8 @@ MonoBehaviour:
   meteorite: {fileID: 316087409819317071, guid: a3c146585f1b98b47a3f69b9cbc75a8c,
     type: 3}
   player: {fileID: 717908550286715291}
-  maximumPlatforms: 20
+  text: {fileID: 0}
+  maximumPlatforms: 30
   levelWidth: 7
   minY: 4
   maxY: 4
@@ -588,6 +590,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &30227480728014264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717908550286715291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6c954d90318a041919701c688e79d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathBox: {fileID: 0}
+  scoreText: {fileID: 0}
 --- !u!1 &717908550488223861
 GameObject:
   m_ObjectHideFlags: 0

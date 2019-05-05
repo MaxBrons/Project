@@ -9,6 +9,8 @@ TagManager:
   - launchpad
   - endLaunchpad
   - meteorite
+  - MeteoriteText
+  - deathbox
   layers:
   - Default
   - TransparentFX
@@ -19,9 +21,9 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
-  - 
+  - layer A
+  - Layer B
+  - Layer C
   - 
   - 
   - 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine.Audio;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Launch : MonoBehaviour
 {
@@ -24,6 +25,11 @@ public class Launch : MonoBehaviour
                 jump.Play();
             }
         }
+    }
+
+    void loadScene()
+    {
+        SceneManager.LoadScene("Winner");
     }
 
 }
